@@ -1,16 +1,3 @@
-document.addEventListener("DOMContentLoaded", function()
-{
-    app();
-})
-
-/**
- * main function to start app
- */
-function app()
-{
-
-}
-
 /**
  *
  * @param el
@@ -22,8 +9,8 @@ function createNode(el)
 }
 
 /**
- * @param parent
- * @param el
+ * @param parent targeted html element to append child element
+ * @param el child html element
  * @returns {*|ActiveX.IXMLDOMNode}
  */
 function append(parent, el)
@@ -49,4 +36,14 @@ function addClass(el, Class)
 function addAttr(el, name, val)
 {
     return el.setAttribute(name, val);
+}
+
+/**
+ * @param el element html to target
+ * @param value : string value of text content elements
+ * @returns {*}
+ */
+function addValue(el, value)
+{
+    return el.textContent = value;
 }

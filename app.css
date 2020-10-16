@@ -1,0 +1,51 @@
+/* GLOBAL */
+
+body {
+    background-color: #377ad3;
+}
+
+/* reset ul browser user agent stylesheet */
+ul {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+/* MAIN */
+.todo-app, .todo-header, .todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-title {
+    text-transform: uppercase;
+    color: #f1edff;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.todo-list {
+    margin-top: 1em;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+
+    margin: 0.2em 0;
+    padding: 0.2em;
+
+    width: 15vw;
+    height: 5vh;
+
+    background-color: #fff;
+    color: #377ad3;
+}
+
+.todo-text {
+    margin: 0.1em 0;
+    display: block;
+}
+
